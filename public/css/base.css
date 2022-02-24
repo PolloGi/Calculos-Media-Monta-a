@@ -1,0 +1,15 @@
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+  
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+.red-c{
+    border: solid 1.5px red;
+}
+.dato-requerido{
+    text-decoration: underline red;
+
+}

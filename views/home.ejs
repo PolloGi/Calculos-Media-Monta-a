@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/navbar.ejs') %>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <div class="col-auto">
+                <p class="text-md-start">Llena los espacios marcados en rojo</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="row">
+                <div class="col-1">
+                    <p class="text-center dato-requerido">Punto</p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center dato-requerido">Nombre de referencia</p>
+                </div>
+                <div class="col-2">
+                    <p class="text-center dato-requerido">Altitud (msnm)</p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center fs-6 dato-requerido">Coordenadas Decimales (Grados decimales DD)</p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center fs-6">Coordenadas Decimales (Grados minutos y segunos DDM)</p>
+                </div>
+            </div>
+            <div class="row" id="tablaUno">
+                
+            </div>
+            <div class="row justify-content-end mt-5">
+                <div class="col-auto d-none" id="botonCalcularGrados">
+                    <button type="button" onclick="calcularDDM()" class="btn btn-outline-success">Calcular grados minutos y segundos</button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" onclick="agregarDato()" class="btn btn-secondary" id="botonAgregarDato">Agregar un dato</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+    <script src="/js/calculos.js"></script>
+</body>
+<%- include('partials/footer.ejs') %>
+</html>
