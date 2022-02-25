@@ -4,8 +4,8 @@
   "description": "Herramientas de calculos para media montaña",
   "main": "app.js",
   "scripts": {
-    "debug": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js",
+    "start": "src/app.js"
   },
   "repository": {
     "type": "git",
